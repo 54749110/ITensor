@@ -164,7 +164,6 @@ int main(int argc, char* argv[])
         {
             ampo += U, "Cdag", j, "C", j ,"Cdag", j+3, "C", j+3 ;
     }
-    H = toMPO(ampo);
 
     // pinning field for odd N, to make CDW (1010……10101) , two negative pinning fields at both ends
     // pinning field for odd N, to make CDW (1010……1010) , negative and positive pinning field at each end
@@ -200,9 +199,10 @@ int main(int argc, char* argv[])
         ampo += 0.5*E, "C", N-2, "Cdag", N-2;
         }
 
+    H = toMPO(ampo);
 
 
-    // initial state
+    // initial state N must be 303 306
     auto state = InitState(sites);
     for(auto i : range1(N))
         {
@@ -237,7 +237,12 @@ int main(int argc, char* argv[])
     std::string filename_ni = std::string("outputni/ni_") + filebase;
     std::string filename_ninj= std::string("outputninj/ninj_") + filebase;
     std::string filename_EE= std::string("outputEE/EE_") + filebase;
+    std::string filename_pdw= std::string("outputpdw/pdw_") + filebase;
     std::string filename_dEdU= "outputdEdU/dEdU_N_"
+                        + std::to_string(N) + "_sweep_" + std::to_string(Nsweep) + "_t_" + std::to_string(t)
+                        + "_J_" + std::to_string(J) + "_V_" + std::to_string(V)
+                        + "_D_" + std::to_string(D) + "_mu_" + std::to_string(mu) + "_E_" + std::to_string(E) ;
+    std::string filename_GSenergy= "outputGSenergy/GZSenergy_N_"
                         + std::to_string(N) + "_sweep_" + std::to_string(Nsweep) + "_t_" + std::to_string(t)
                         + "_J_" + std::to_string(J) + "_V_" + std::to_string(V)
                         + "_D_" + std::to_string(D) + "_mu_" + std::to_string(mu) + "_E_" + std::to_string(E) ;
@@ -255,13 +260,6 @@ int main(int argc, char* argv[])
     {
     std::ofstream ofs1(filename, std::ios::out | std::ios::trunc);
     }
-    {
-    std::ofstream ofs4(filename_dEdU, std::ios::out | std::ios::trunc);
-    }
-    {
-    std::ofstream ofs3(filename_CDWorder, std::ios::out | std::ios::trunc);
-    }
-    
 
     // DMRG process , updating GS-energy and updating psi for each dmrg call 
     Args dmrg_args = Args("Quiet",true);
@@ -331,6 +329,44 @@ int main(int argc, char* argv[])
     
 
     // the program below are the observations
+
+
+    // calcualting pdw order <cdag_3i cdag_3i+3>
+    std::ofstream outfile13(filename_pdw, std::ios::out | std::ios::trunc);
+    for(int j = 3; j < N-4; j+=3)
+        {
+        auto Adag3i = op(sites,"Adag",j);
+        auto Adag3j = op(sites,"Adag",j+3);
+
+        // guage psi is a must for contracting left side
+        psi.position(j) ;
+        auto psidag = dag(psi);
+        psidag.prime();
+        auto li_1 = leftLinkIndex(psi,j);
+
+        //constructing majorana operator using spinless fermion basis
+        auto Adag3iAdag3j = prime(psi(j),li_1)*Adag3i*psidag(j);
+
+        for(int k = j+1; k < j+3; ++k)
+            {
+            Adag3iAdag3j *= psi(k);
+            Adag3iAdag3j *= op(sites,"F",k); //Jordan-Wigner string
+            Adag3iAdag3j *= psidag(k);
+            }
+        auto lj = rightLinkIndex(psi,j+3);
+
+        Adag3iAdag3j  *= prime(psi(j+3),lj);
+        Adag3iAdag3j  *= Adag3j;
+        Adag3iAdag3j  *= psidag(j+3);
+
+        //consider JW-transformaton 
+        //origin : cdag3cdagj
+        //now:     adag3agdaj 
+        auto result =  elt(Adag3iAdag3j) ;
+        outfile13 << std::fixed << std::setprecision(12) << std::setw(22) << result << std::endl;
+        }
+    outfile13.close();
+
     // calcualting left majorana <GAMMA_3 gamma_2J+1>
     std::ofstream outfile1(filename_gamma3gammaj, std::ios::out | std::ios::trunc);
     for(int j = 6; j < N-1; j+=3)
@@ -685,7 +721,7 @@ int main(int argc, char* argv[])
     auto ampo4 = AutoMPO(sites) ;
     for (int j = 1; j <= N-3 ; j += 1) 
         {
-            ampo4 += U, "Cdag", j, "C", j ,"Cdag", j+3, "C", j+3 ;
+            ampo4 += 1, "Cdag", j, "C", j ,"Cdag", j+3, "C", j+3 ;
     }
     G2 = toMPO(ampo4);
     auto wave2 = inner(psi , G2 , psi) ;
@@ -738,6 +774,18 @@ int main(int argc, char* argv[])
             ninj.push_back(3*s/(imax - imin));
         }
     
+    // MPO G0 ;    
+    // std::ofstream outfile13(filename_pdw, std::ios::out | std::ios::trunc);
+    // for(int p = 3; p <= N; p += 3)
+    //     {
+    //     auto pdw = AutoMPO(sites);
+    //     pdw += 1, "Cdag", p, "C", p+3, 
+    //     G0 = toMPO(pdw);
+    //     auto pdworder = inner(psi, G0, psi);
+    //     outfile13 << std::fixed << std::setprecision(12) << std::setw(22) << pdworder << std::endl;
+    //     }
+    // outfile13.close();
+    
     // calcualting density correlation function <n_i n_j> - <n_i><n_j>
     std::ofstream outfile10(filename_densitycorr, std::ios::out | std::ios::trunc);
     std::vector<double> density;
@@ -762,7 +810,7 @@ int main(int argc, char* argv[])
             orderni += 3*Nj1[p-1]*pow(-1,p)/N; 
             }
         }
-    if(N%6 == 1) 
+    if(N%6 == 3) 
         {
         for(int p = 1; p <= N/3-1; ++p)
             {
@@ -777,6 +825,14 @@ int main(int argc, char* argv[])
         }
     outfile11.close();
 
+    std::ofstream outfile12(filename_GSenergy, std::ios::out | std::ios::app);
+    if(outfile12)
+        {
+        outfile12 << std::fixed << std::setprecision(12) << std::setw(22) << U
+                 << ' ' << std::fixed << std::setprecision(12) << std::setw(22) << energy
+                 << std::endl;
+        }
+    outfile12.close();
 
     // monitor the wall-clock time of this program
     auto wall_end = std::chrono::steady_clock::now();

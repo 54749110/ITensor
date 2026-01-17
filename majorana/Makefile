@@ -20,11 +20,11 @@ LIBGFLAGS=-L'$(ITENSOR_LIBDIR)' $(ITENSOR_LIBGFLAGS)
 
 #Targets -----------------
 
-build: dmrg dmrg_table dmrgj1j2 exthubbard trg ctmrg mixedspin hubbard_2d 2channeldmrgthird hubbard_2d_conserve_momentum helloitensor 2channeldmrg 2channeldmrgsecond 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh 2channeldmrgeighth try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth dmrggrover flatband1 kitaev kitaev2 kitaev3 lieblattice try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhuabbard9 liebkitaevread liebkitaevread2 lieblattice2 
+build: dmrg dmrg_table dmrgj1j2 exthubbard trg ctmrg mixedspin hubbard_2d 2channeldmrgthird hubbard_2d_conserve_momentum helloitensor 2channeldmrg 2channeldmrgsecond 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh 2channeldmrgeighth try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth dmrggrover flatband1 kitaev kitaev2 kitaev3 lieblattice try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhuabbard9 liebkitaevread liebkitaevread2 lieblattice2 liebhubbrad10 liebhubbard11 kitaevhubbard
 
 debug: dmrg-g dmrg_table-g dmrgj1j2-g exthubbard-g trg-g ctmrg-g mixedspin-g hubbard_2d-g hubbard_2d_conserve_momentum-g flatband1
 
-all: dmrg dmrg_table dmrgj1j2 exthubbard trg ctmrg mixedspin hubbard_2d hubbard_2d_conserve_momentum helloitensor 2channeldmrgthird 2channeldmrg 2channeldmrgsecond 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh 2channeldmrgeighth try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth dmrggrover flatband1 kitaev kitaev2 kitaev3 lieblattice try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhubbard9 liebkitaevread liebkitaevread2 lieblattice2
+all: dmrg dmrg_table dmrgj1j2 exthubbard trg ctmrg mixedspin hubbard_2d hubbard_2d_conserve_momentum helloitensor 2channeldmrgthird 2channeldmrg 2channeldmrgsecond 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh 2channeldmrgeighth try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth dmrggrover flatband1 kitaev kitaev2 kitaev3 lieblattice try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhubbard9 liebkitaevread liebkitaevread2 lieblattice2 liebhubbard10 liebhubbard11 kitaevhubbard
 
 dmrg: dmrg.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 	$(CCCOM) $(CCFLAGS) dmrg.o -o dmrg $(LIBFLAGS)
@@ -34,6 +34,9 @@ liebkitaevread: liebkitaevread.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 
 liebkitaevread2: liebkitaevread2.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 	$(CCCOM) $(CCFLAGS) liebkitaevread2.o -o liebkitaevread2 $(LIBFLAGS)
+
+kitaevhubbard: kitaevhubbard.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
+	$(CCCOM) $(CCFLAGS) kitaevhubbard.o -o kitaevhubbard $(LIBFLAGS)
 
 liebhubbard: liebhubbard.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 	$(CCCOM) $(CCFLAGS) liebhubbard.o -o liebhubbard $(LIBFLAGS)
@@ -57,7 +60,13 @@ liebhubbard7: liebhubbard7.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 	$(CCCOM) $(CCFLAGS) liebhubbard7.o -o liebhubbard7 $(LIBFLAGS)
 	
 liebhubbard9: liebhubbard9.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
-	$(CCCOM) $(CCFLAGS) liebhubbard9.o -o liebhubbard9 $(LIBFLAGS)		
+	$(CCCOM) $(CCFLAGS) liebhubbard9.o -o liebhubbard9 $(LIBFLAGS)	
+
+liebhubbard10: liebhubbard10.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
+	$(CCCOM) $(CCFLAGS) liebhubbard10.o -o liebhubbard10 $(LIBFLAGS)	
+
+liebhubbard11: liebhubbard11.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
+	$(CCCOM) $(CCFLAGS) liebhubbard11.o -o liebhubbard11 $(LIBFLAGS)	
 
 try1: try1.o $(ITENSOR_LIBS) $(TENSOR_HEADERS)
 	$(CCCOM) $(CCFLAGS) try1.o -o try1 $(LIBFLAGS)
@@ -244,6 +253,6 @@ mkdebugdir:
 	mkdir -p .debug_objs
 
 clean:
-	@rm -fr *.o .debug_objs dmrg dmrg-g helloitensor 2channeldmrg 2channeldmrgthird 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth flatband1 kitaev kitaev2 kitaev3 lieblattice lieblattice2 try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhubbard9 liebkitaevread liebkitaevread2 dmrggrover\
+	@rm -fr *.o .debug_objs dmrg dmrg-g helloitensor 2channeldmrg 2channeldmrgthird 1channeldmrg 2channeldmrgfourth 2channeldmrgfifth 2channeldmrgsixth 2channeldmrgseventh try2 2channeldmrgninth 2channeldmrgtenth 2channeldmrgeleventh 2channeldmrgtwelveth 2channeldmrgthirteenth 2channeldmrgfourteenth 2channeldmrgfifteenth 2channeldmrgsixteenth flatband1 kitaev kitaev2 kitaev3 lieblattice lieblattice2 try1 liebhubbard liebhubbard2 liebhubbard3 liebhubbard4 liebhubbard5 liebhubbard6 liebhubbard7 liebhubbard9 liebkitaevread liebkitaevread2 dmrggrover liebhubbard10 liebhubbard11 kitaevhubbard\
 	dmrg_table dmrg_table-g dmrgj1j2 dmrgj1j2-g exthubbard exthubbard-g 2channeldmrgsecond\
     mixedspin mixedspin-g trg trg-g ctmrg ctmrg-g hubbard_2d hubbard_2d-g hubbard_2d_conserve_momentum hubbard_2d_conserve_momentum-g

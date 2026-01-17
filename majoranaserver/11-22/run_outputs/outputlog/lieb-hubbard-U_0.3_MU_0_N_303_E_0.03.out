@@ -1,0 +1,715 @@
+//////////////////////////
+Reading input file ......
+
+Got input.N = 303
+Got input.t = 0.03
+Got input.J = 1
+Got input.V = 0.6
+Got input.D = 0.018
+Got input.U = 0.3
+Got input.mu = 0
+Got input.E = 0.03
+Got input.nsweeps = 87
+Sweeps:
+1  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+2  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+3  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+4  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+5  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+6  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+7  MaxDim=20, MinDim=20, Cutoff=1.0E-06, Niter=8, Noise=1.0E-05
+8  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+9  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+10  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+11  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+12  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+13  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+14  MaxDim=40, MinDim=20, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+15  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+16  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+17  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+18  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+19  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+20  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+21  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+22  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+23  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+24  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+25  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+26  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+27  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+28  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+29  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+30  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+31  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+32  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+33  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+34  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+35  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+36  MaxDim=80, MinDim=10, Cutoff=1.0E-06, Niter=4, Noise=1.0E-05
+37  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+38  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+39  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+40  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+41  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+42  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+43  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+44  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+45  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+46  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+47  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+48  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+49  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+50  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+51  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+52  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+53  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+54  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+55  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+56  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+57  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+58  MaxDim=160, MinDim=10, Cutoff=1.0E-08, Niter=4, Noise=1.0E-06
+59  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+60  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+61  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+62  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+63  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+64  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+65  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+66  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+67  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+68  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+69  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+70  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+71  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+72  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+73  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+74  MaxDim=320, MinDim=10, Cutoff=1.0E-10, Niter=4, Noise=1.0E-07
+75  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+76  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+77  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+78  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+79  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+80  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+81  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+82  MaxDim=640, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=1.0E-08
+83  MaxDim=1280, MinDim=10, Cutoff=1.0E-12, Niter=2, Noise=0.0E+00
+84  MaxDim=1280, MinDim=10, Cutoff=1.0E-14, Niter=2, Noise=0.0E+00
+85  MaxDim=1280, MinDim=10, Cutoff=1.0E-14, Niter=2, Noise=0.0E+00
+86  MaxDim=1280, MinDim=10, Cutoff=1.0E-14, Niter=2, Noise=0.0E+00
+87  MaxDim=1280, MinDim=10, Cutoff=1.0E-14, Niter=2, Noise=0.0E+00
+
+
+    vN Entropy at center bond b=151 = 0.776857957577
+    Eigs at center bond b=151: 0.6768 0.2896 0.0185 0.0074 0.0058 0.0016 
+    Largest link dim during sweep 1/87 was 20
+    Largest truncation error: 1.17633e-06
+    Energy after sweep 1/87 is -183.956415386526
+    Sweep 1/87 CPU time = 18.09s (Wall time = 1.176s)
+
+    vN Entropy at center bond b=151 = 0.786745359679
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 2/87 was 20
+    Largest truncation error: 1.52065e-06
+    Energy after sweep 2/87 is -183.958058105629
+    Sweep 2/87 CPU time = 25.20s (Wall time = 1.614s)
+
+    vN Entropy at center bond b=151 = 0.786768510629
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 3/87 was 20
+    Largest truncation error: 1.54173e-06
+    Energy after sweep 3/87 is -183.958060873350
+    Sweep 3/87 CPU time = 25.14s (Wall time = 1.614s)
+
+    vN Entropy at center bond b=151 = 0.786768963598
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 4/87 was 20
+    Largest truncation error: 1.54281e-06
+    Energy after sweep 4/87 is -183.958060900689
+    Sweep 4/87 CPU time = 25.14s (Wall time = 1.613s)
+
+    vN Entropy at center bond b=151 = 0.786768982090
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 5/87 was 20
+    Largest truncation error: 1.54292e-06
+    Energy after sweep 5/87 is -183.958060885798
+    Sweep 5/87 CPU time = 25.19s (Wall time = 1.610s)
+
+    vN Entropy at center bond b=151 = 0.786768983075
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 6/87 was 20
+    Largest truncation error: 1.54293e-06
+    Energy after sweep 6/87 is -183.958060876732
+    Sweep 6/87 CPU time = 25.20s (Wall time = 1.615s)
+
+    vN Entropy at center bond b=151 = 0.786768983132
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 7/87 was 20
+    Largest truncation error: 1.54293e-06
+    Energy after sweep 7/87 is -183.958060871689
+    Sweep 7/87 CPU time = 25.16s (Wall time = 1.612s)
+
+    vN Entropy at center bond b=151 = 0.786855954144
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 8/87 was 24
+    Largest truncation error: 7.51774e-07
+    Energy after sweep 8/87 is -183.958658244904
+    Sweep 8/87 CPU time = 14.26s (Wall time = 0.915s)
+
+    vN Entropy at center bond b=151 = 0.786862861021
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 9/87 was 24
+    Largest truncation error: 7.52957e-07
+    Energy after sweep 9/87 is -183.958658383860
+    Sweep 9/87 CPU time = 14.41s (Wall time = 0.926s)
+
+    vN Entropy at center bond b=151 = 0.786863137383
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 10/87 was 24
+    Largest truncation error: 7.53019e-07
+    Energy after sweep 10/87 is -183.958658246071
+    Sweep 10/87 CPU time = 14.52s (Wall time = 0.931s)
+
+    vN Entropy at center bond b=151 = 0.786863166045
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 11/87 was 24
+    Largest truncation error: 7.53026e-07
+    Energy after sweep 11/87 is -183.958658243037
+    Sweep 11/87 CPU time = 14.49s (Wall time = 0.929s)
+
+    vN Entropy at center bond b=151 = 0.786863169731
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 12/87 was 24
+    Largest truncation error: 7.53027e-07
+    Energy after sweep 12/87 is -183.958658245242
+    Sweep 12/87 CPU time = 14.50s (Wall time = 0.931s)
+
+    vN Entropy at center bond b=151 = 0.786863170224
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 13/87 was 24
+    Largest truncation error: 7.53027e-07
+    Energy after sweep 13/87 is -183.958658246321
+    Sweep 13/87 CPU time = 14.54s (Wall time = 0.932s)
+
+    vN Entropy at center bond b=151 = 0.786863170291
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 14/87 was 24
+    Largest truncation error: 7.53026e-07
+    Energy after sweep 14/87 is -183.958658246754
+    Sweep 14/87 CPU time = 14.56s (Wall time = 0.931s)
+
+    vN Entropy at center bond b=151 = 0.786780768534
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 15/87 was 24
+    Largest truncation error: 7.50906e-07
+    Energy after sweep 15/87 is -183.958610765422
+    Sweep 15/87 CPU time = 14.22s (Wall time = 0.911s)
+
+    vN Entropy at center bond b=151 = 0.786777796317
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 16/87 was 24
+    Largest truncation error: 7.51299e-07
+    Energy after sweep 16/87 is -183.958609942197
+    Sweep 16/87 CPU time = 14.22s (Wall time = 0.909s)
+
+    vN Entropy at center bond b=151 = 0.786777612270
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 17/87 was 24
+    Largest truncation error: 7.51292e-07
+    Energy after sweep 17/87 is -183.958609797004
+    Sweep 17/87 CPU time = 14.13s (Wall time = 0.906s)
+
+    vN Entropy at center bond b=151 = 0.786777578349
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 18/87 was 24
+    Largest truncation error: 7.51286e-07
+    Energy after sweep 18/87 is -183.958609762032
+    Sweep 18/87 CPU time = 14.21s (Wall time = 0.909s)
+
+    vN Entropy at center bond b=151 = 0.786777571376
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 19/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 19/87 is -183.958609750400
+    Sweep 19/87 CPU time = 14.23s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569955
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 20/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 20/87 is -183.958609744747
+    Sweep 20/87 CPU time = 14.19s (Wall time = 0.909s)
+
+    vN Entropy at center bond b=151 = 0.786777569669
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 21/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 21/87 is -183.958609741253
+    Sweep 21/87 CPU time = 14.21s (Wall time = 0.910s)
+
+    vN Entropy at center bond b=151 = 0.786777569611
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 22/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 22/87 is -183.958609738886
+    Sweep 22/87 CPU time = 14.13s (Wall time = 0.906s)
+
+    vN Entropy at center bond b=151 = 0.786777569600
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 23/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 23/87 is -183.958609737250
+    Sweep 23/87 CPU time = 14.18s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569598
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 24/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 24/87 is -183.958609736104
+    Sweep 24/87 CPU time = 14.31s (Wall time = 0.917s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 25/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 25/87 is -183.958609735305
+    Sweep 25/87 CPU time = 14.21s (Wall time = 0.910s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 26/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 26/87 is -183.958609734746
+    Sweep 26/87 CPU time = 14.20s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 27/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 27/87 is -183.958609734362
+    Sweep 27/87 CPU time = 14.18s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 28/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 28/87 is -183.958609734093
+    Sweep 28/87 CPU time = 14.16s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 29/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 29/87 is -183.958609733911
+    Sweep 29/87 CPU time = 14.22s (Wall time = 0.907s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 30/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 30/87 is -183.958609733784
+    Sweep 30/87 CPU time = 14.20s (Wall time = 0.909s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 31/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 31/87 is -183.958609733697
+    Sweep 31/87 CPU time = 14.14s (Wall time = 0.907s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 32/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 32/87 is -183.958609733630
+    Sweep 32/87 CPU time = 14.18s (Wall time = 0.908s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 33/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 33/87 is -183.958609733594
+    Sweep 33/87 CPU time = 14.24s (Wall time = 0.912s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 34/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 34/87 is -183.958609733562
+    Sweep 34/87 CPU time = 14.15s (Wall time = 0.905s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 35/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 35/87 is -183.958609733541
+    Sweep 35/87 CPU time = 14.03s (Wall time = 0.898s)
+
+    vN Entropy at center bond b=151 = 0.786777569597
+    Eigs at center bond b=151: 0.6732 0.2914 0.0189 0.0077 0.0064 0.0018 
+    Largest link dim during sweep 36/87 was 24
+    Largest truncation error: 7.51284e-07
+    Energy after sweep 36/87 is -183.958609733524
+    Sweep 36/87 CPU time = 14.02s (Wall time = 0.897s)
+
+    vN Entropy at center bond b=151 = 0.787606878011
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 37/87 was 46
+    Largest truncation error: 7.47446e-09
+    Energy after sweep 37/87 is -183.959737584503
+    Sweep 37/87 CPU time = 31.20s (Wall time = 2.008s)
+
+    vN Entropy at center bond b=151 = 0.787646670811
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 38/87 was 49
+    Largest truncation error: 7.51916e-09
+    Energy after sweep 38/87 is -183.959740894643
+    Sweep 38/87 CPU time = 41.12s (Wall time = 2.643s)
+
+    vN Entropy at center bond b=151 = 0.787648836512
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 39/87 was 49
+    Largest truncation error: 7.53596e-09
+    Energy after sweep 39/87 is -183.959740939922
+    Sweep 39/87 CPU time = 42.95s (Wall time = 2.753s)
+
+    vN Entropy at center bond b=151 = 0.787648765902
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 40/87 was 49
+    Largest truncation error: 7.53069e-09
+    Energy after sweep 40/87 is -183.959740926674
+    Sweep 40/87 CPU time = 42.85s (Wall time = 2.769s)
+
+    vN Entropy at center bond b=151 = 0.787648770054
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 41/87 was 49
+    Largest truncation error: 7.52908e-09
+    Energy after sweep 41/87 is -183.959740921264
+    Sweep 41/87 CPU time = 42.85s (Wall time = 2.750s)
+
+    vN Entropy at center bond b=151 = 0.787648769881
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 42/87 was 49
+    Largest truncation error: 7.52867e-09
+    Energy after sweep 42/87 is -183.959740919987
+    Sweep 42/87 CPU time = 42.85s (Wall time = 2.748s)
+
+    vN Entropy at center bond b=151 = 0.787648769735
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 43/87 was 49
+    Largest truncation error: 7.52856e-09
+    Energy after sweep 43/87 is -183.959740919533
+    Sweep 43/87 CPU time = 42.94s (Wall time = 2.754s)
+
+    vN Entropy at center bond b=151 = 0.787648769684
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 44/87 was 49
+    Largest truncation error: 7.52853e-09
+    Energy after sweep 44/87 is -183.959740919411
+    Sweep 44/87 CPU time = 42.86s (Wall time = 2.751s)
+
+    vN Entropy at center bond b=151 = 0.787648769668
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 45/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 45/87 is -183.959740919367
+    Sweep 45/87 CPU time = 42.86s (Wall time = 2.749s)
+
+    vN Entropy at center bond b=151 = 0.787648769662
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 46/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 46/87 is -183.959740919348
+    Sweep 46/87 CPU time = 42.59s (Wall time = 2.733s)
+
+    vN Entropy at center bond b=151 = 0.787648769660
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 47/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 47/87 is -183.959740919338
+    Sweep 47/87 CPU time = 42.65s (Wall time = 2.737s)
+
+    vN Entropy at center bond b=151 = 0.787648769660
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 48/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 48/87 is -183.959740919338
+    Sweep 48/87 CPU time = 42.60s (Wall time = 2.742s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 49/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 49/87 is -183.959740919336
+    Sweep 49/87 CPU time = 42.53s (Wall time = 2.724s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 50/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 50/87 is -183.959740919335
+    Sweep 50/87 CPU time = 42.91s (Wall time = 2.751s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 51/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 51/87 is -183.959740919338
+    Sweep 51/87 CPU time = 42.54s (Wall time = 2.728s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 52/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 52/87 is -183.959740919337
+    Sweep 52/87 CPU time = 42.55s (Wall time = 2.729s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 53/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 53/87 is -183.959740919340
+    Sweep 53/87 CPU time = 42.69s (Wall time = 2.736s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 54/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 54/87 is -183.959740919336
+    Sweep 54/87 CPU time = 42.93s (Wall time = 2.751s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 55/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 55/87 is -183.959740919340
+    Sweep 55/87 CPU time = 42.15s (Wall time = 2.704s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 56/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 56/87 is -183.959740919338
+    Sweep 56/87 CPU time = 42.70s (Wall time = 2.737s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 57/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 57/87 is -183.959740919337
+    Sweep 57/87 CPU time = 42.56s (Wall time = 2.734s)
+
+    vN Entropy at center bond b=151 = 0.787648769659
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 58/87 was 49
+    Largest truncation error: 7.52852e-09
+    Energy after sweep 58/87 is -183.959740919338
+    Sweep 58/87 CPU time = 42.66s (Wall time = 2.735s)
+
+    vN Entropy at center bond b=151 = 0.787691780156
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 59/87 was 88
+    Largest truncation error: 7.50278e-11
+    Energy after sweep 59/87 is -183.959753411733
+    Sweep 59/87 CPU time = 2m, 0.9s (Wall time = 7.776s)
+
+    vN Entropy at center bond b=151 = 0.787692782601
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 60/87 was 90
+    Largest truncation error: 7.49582e-11
+    Energy after sweep 60/87 is -183.959753445735
+    Sweep 60/87 CPU time = 2m, 38.3s (Wall time = 10.16s)
+
+    vN Entropy at center bond b=151 = 0.787692821527
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 61/87 was 90
+    Largest truncation error: 7.50772e-11
+    Energy after sweep 61/87 is -183.959753445966
+    Sweep 61/87 CPU time = 2m, 39.4s (Wall time = 10.31s)
+
+    vN Entropy at center bond b=151 = 0.787692824742
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 62/87 was 90
+    Largest truncation error: 7.51137e-11
+    Energy after sweep 62/87 is -183.959753445968
+    Sweep 62/87 CPU time = 2m, 38.0s (Wall time = 10.14s)
+
+    vN Entropy at center bond b=151 = 0.787692825196
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 63/87 was 90
+    Largest truncation error: 7.51295e-11
+    Energy after sweep 63/87 is -183.959753446040
+    Sweep 63/87 CPU time = 2m, 38.7s (Wall time = 10.19s)
+
+    vN Entropy at center bond b=151 = 0.787692825269
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 64/87 was 90
+    Largest truncation error: 7.51342e-11
+    Energy after sweep 64/87 is -183.959753446038
+    Sweep 64/87 CPU time = 2m, 38.7s (Wall time = 10.19s)
+
+    vN Entropy at center bond b=151 = 0.787692825282
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 65/87 was 90
+    Largest truncation error: 7.51347e-11
+    Energy after sweep 65/87 is -183.959753446037
+    Sweep 65/87 CPU time = 2m, 38.9s (Wall time = 10.19s)
+
+    vN Entropy at center bond b=151 = 0.787692825284
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 66/87 was 90
+    Largest truncation error: 7.5135e-11
+    Energy after sweep 66/87 is -183.959753446039
+    Sweep 66/87 CPU time = 2m, 39.1s (Wall time = 10.26s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 67/87 was 90
+    Largest truncation error: 7.51351e-11
+    Energy after sweep 67/87 is -183.959753446037
+    Sweep 67/87 CPU time = 2m, 39.2s (Wall time = 10.22s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 68/87 was 90
+    Largest truncation error: 7.51347e-11
+    Energy after sweep 68/87 is -183.959753446037
+    Sweep 68/87 CPU time = 2m, 38.6s (Wall time = 10.18s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 69/87 was 90
+    Largest truncation error: 7.5135e-11
+    Energy after sweep 69/87 is -183.959753446036
+    Sweep 69/87 CPU time = 2m, 38.8s (Wall time = 10.19s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 70/87 was 90
+    Largest truncation error: 7.51353e-11
+    Energy after sweep 70/87 is -183.959753446035
+    Sweep 70/87 CPU time = 2m, 38.1s (Wall time = 10.14s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 71/87 was 90
+    Largest truncation error: 7.51352e-11
+    Energy after sweep 71/87 is -183.959753446039
+    Sweep 71/87 CPU time = 2m, 39.2s (Wall time = 10.21s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 72/87 was 90
+    Largest truncation error: 7.51349e-11
+    Energy after sweep 72/87 is -183.959753446038
+    Sweep 72/87 CPU time = 2m, 39.5s (Wall time = 10.27s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 73/87 was 90
+    Largest truncation error: 7.51351e-11
+    Energy after sweep 73/87 is -183.959753446037
+    Sweep 73/87 CPU time = 2m, 39.2s (Wall time = 10.20s)
+
+    vN Entropy at center bond b=151 = 0.787692825285
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 74/87 was 90
+    Largest truncation error: 7.51353e-11
+    Energy after sweep 74/87 is -183.959753446039
+    Sweep 74/87 CPU time = 2m, 35.6s (Wall time = 9.967s)
+
+    vN Entropy at center bond b=151 = 0.787696004443
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 75/87 was 158
+    Largest truncation error: 7.62207e-13
+    Energy after sweep 75/87 is -183.959753599491
+    Sweep 75/87 CPU time = 4m, 33.0s (Wall time = 18.19s)
+
+    vN Entropy at center bond b=151 = 0.787696052389
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 76/87 was 160
+    Largest truncation error: 7.61139e-13
+    Energy after sweep 76/87 is -183.959753599821
+    Sweep 76/87 CPU time = 5m, 41.3s (Wall time = 23.06s)
+
+    vN Entropy at center bond b=151 = 0.787696054599
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 77/87 was 160
+    Largest truncation error: 7.55765e-13
+    Energy after sweep 77/87 is -183.959753599824
+    Sweep 77/87 CPU time = 5m, 38.4s (Wall time = 22.51s)
+
+    vN Entropy at center bond b=151 = 0.787696054897
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 78/87 was 160
+    Largest truncation error: 7.56109e-13
+    Energy after sweep 78/87 is -183.959753599824
+    Sweep 78/87 CPU time = 5m, 40.4s (Wall time = 22.67s)
+
+    vN Entropy at center bond b=151 = 0.787696054976
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 79/87 was 160
+    Largest truncation error: 7.56216e-13
+    Energy after sweep 79/87 is -183.959753599827
+    Sweep 79/87 CPU time = 5m, 21.9s (Wall time = 20.74s)
+
+    vN Entropy at center bond b=151 = 0.787696055011
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 80/87 was 160
+    Largest truncation error: 7.56202e-13
+    Energy after sweep 80/87 is -183.959753599826
+    Sweep 80/87 CPU time = 5m, 22.1s (Wall time = 20.78s)
+
+    vN Entropy at center bond b=151 = 0.787696055030
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 81/87 was 160
+    Largest truncation error: 7.56228e-13
+    Energy after sweep 81/87 is -183.959753599825
+    Sweep 81/87 CPU time = 5m, 21.4s (Wall time = 20.72s)
+
+    vN Entropy at center bond b=151 = 0.787696055040
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 82/87 was 160
+    Largest truncation error: 7.56364e-13
+    Energy after sweep 82/87 is -183.959753599827
+    Sweep 82/87 CPU time = 5m, 22.8s (Wall time = 20.82s)
+
+    vN Entropy at center bond b=151 = 0.787696376152
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 83/87 was 147
+    Largest truncation error: 7.60656e-13
+    Energy after sweep 83/87 is -183.959753599318
+    Sweep 83/87 CPU time = 4m, 10.6s (Wall time = 16.09s)
+
+    vN Entropy at center bond b=151 = 0.787696382228
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 84/87 was 248
+    Largest truncation error: 7.68637e-15
+    Energy after sweep 84/87 is -183.959753601750
+    Sweep 84/87 CPU time = 11m, 17s (Wall time = 46.07s)
+
+    vN Entropy at center bond b=151 = 0.787696383485
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 85/87 was 251
+    Largest truncation error: 7.57365e-15
+    Energy after sweep 85/87 is -183.959753601745
+    Sweep 85/87 CPU time = 17m, 16s (Wall time = 1m, 7.5s)
+
+    vN Entropy at center bond b=151 = 0.787696383536
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 86/87 was 250
+    Largest truncation error: 7.51479e-15
+    Energy after sweep 86/87 is -183.959753601749
+    Sweep 86/87 CPU time = 15m, 53s (Wall time = 1m, 1.2s)
+
+    vN Entropy at center bond b=151 = 0.787696383545
+    Eigs at center bond b=151: 0.6728 0.2917 0.0190 0.0077 0.0064 0.0019 
+    Largest link dim during sweep 87/87 was 250
+    Largest truncation error: 7.51294e-15
+    Energy after sweep 87/87 is -183.959753601749
+    Sweep 87/87 CPU time = 15m, 44s (Wall time = 1m, 0.8s)
+Initial energy = 0.09000
+
+Ground State Energy = -183.9597536017
+run_outputs/outputpsi/N_303_sweep_87_t_0.030000_J_1.000000_V_0.600000_D_0.018000_U_0.300000_mu_0.000000_E_0.030000 converge
+Wall-clock time (s) = 3140.678545

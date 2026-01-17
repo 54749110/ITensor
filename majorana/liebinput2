@@ -1,14 +1,15 @@
 input
     {
-    N = 303
+    N = 90
     t= 0.03
     J= 1
-    V= 0.600
-    D = 0.018 
-    U = 10
-    mu = 0
-
-    nsweeps = 81
+    V= 0.6
+    D = 0.018
+    U = 0.79
+    mu = 0.0
+    E = 0
+    
+    nsweeps = 85
     sweeps
         {
         maxm  minm  cutoff  niter  noise
@@ -94,6 +95,10 @@ input
         640     10    1E-12   2     1E-8
         640     10    1E-12   2     1E-8
         640     10    1E-12   2     1E-8
+        1280    10    1E-12   2     1E-8
+        1280    10    1E-12   2     1E-8
+        1280    10    1E-12   2     1E-8
+        1280    10    1E-12   2     1E-8
         }
     quiet = yes
     }
